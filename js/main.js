@@ -7,12 +7,10 @@ $('#toggle-login').click(function(){
 var UNIQUEID, JSKEY;
 
 
- 	UNIQUEID =  ID;
- 	JSKEY = js;
+UNIQUEID =  ID;
+JSKEY = js;
 
 
-
-alert(UNIQUEID);
 
 
 
@@ -21,27 +19,24 @@ alert(document.getElementById('username').value);
 
 
 
-// Parse.initialize("CSkLcrK8SabIjCYg4fbwlAgWpXb7jkXn1hqq3hta", "9UehYmjHUGLgDximR5xMsmMZJMJ67klJZAgBcb0q");
+Parse.initialize(UNIQUEID, JSKEY);
 
 
 
-// var username = document.getElementById('usernmae').value;
-// var password = document.getElementById('password').value;
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
 
-//     alert(username);
-//     alert(password);
+alert(username);
+alert(password);
 
-// Parse.User.logIn(username, password, {
-//         success: function(user) {
-//             console.log(user);
-//             return true;
-//         },
-//         error: function(user, error) {
-//             console.log(user + error);
-//             return false;
-//         }
-//     });
-
-// var botao = document.querySelector('login');
-// botao.onclick = fazerLogin;
+Parse.User.logIn(username, password, {
+        success: function(user) {
+            console.log(user);
+            return true;
+        },
+        error: function(user, error) {
+            console.log(user + error);
+            return false;
+        }
+    });
 }
