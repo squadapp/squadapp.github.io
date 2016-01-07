@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+  width:100%;
+  font-family: 'Lato';
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+/**header section here kush*/
+header {
+
+  background: #421C52;
+  width: 100%;
+  height: 79px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #fff;
+  z-index: 100;
+
+}
+
+/*#logo{
+  top:18px;
+  position:absolute;
+  float: left;
+  width: 125px;
+  height: 40px;
+  background: url(../images/fixedcgdlogo.png) no-repeat center;
+  display: block;
+
+}*/
+
+nav {
+
+  float: right;
+  
+}
+
+#menu-icon {
+
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: #397D02 url(../images/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+  background-color:#86C67C;
+  border-radius: 4px 4px 0 0;
+
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+
+ul {
+  list-style: none;
+
+}
+
+li {
+
+  display: inline-block;
+  float: left;
+  padding: 10px
+
+}
+
+.header {
+  height: 100%;
+  margin:0;
+  background-color:black;
+  color:white;
+}
+
+.header h1 {
+	padding-top:90px;
+	margin-top:0;
+	font-family: 'Raleway';
+}
+
+.clubs {
+	font-family: 'Raleway';
+	height:100%;
+	margin:0;
+}
+
+.clubs h1 {
+  margin:0;
+  padding-top:30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.clubs .imgholder {
+ display: inline-block;
+ padding-bottom:30px;
+}
+.clubs .imgholder h2{
+  text-align: center;
+}
+
+/**put screenshots styling here*/
+.screenshots {
+	padding:0;
+	height:100%;
+	background-color: #F1F0FF;
+}
+
+.screenshots h1 {
+	font-family: 'Raleway';
+	padding-top:30px;
+}
+
+.team {
+	height:100%;
+	background-color: #8C489F;
+	font-family: 'Raleway';
+	color:white;
+}
+
+.team h1 {
+	padding-top: 50px;
+	margin:0;
+}
