@@ -4,18 +4,6 @@ $('#toggle-login').click(function(){
 
 
 
-var UNIQUEID, JSKEY;
-
-
- 	UNIQUEID =  ID;
- 	JSKEY = js;
-
-
-
-alert(UNIQUEID);
-
-
-
 function login() {
 alert(document.getElementById('username').value);
 
